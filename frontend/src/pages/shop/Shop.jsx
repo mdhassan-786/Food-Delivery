@@ -16,7 +16,7 @@ const Shop = () => {
     async function fetchData() {
       try {
         const response = await axios.get(
-          `https://food-delivery-7yy8-mdhassans-projects.vercel.app/api/dishes`
+          `https://food-delivery-7yy8.vercel.app/api/dishes`
         );
         console.log(response.data);
         setProduct(response.data);
