@@ -49,7 +49,7 @@ const Login = () => {
   const loginUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `https://food-delivery-app-five-gamma.vercel.app/api/user/login`,
+        `http://localhost:3001/api/login`,
         currentUser
       );
       const { user, token } = response.data;
